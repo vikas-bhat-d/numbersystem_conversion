@@ -9,10 +9,10 @@ value=dict()
 value={"0":"0","1":"1","2":"2","3":"3","4":"4","5":"5","6":"6","7":"7","8":"8","9":"9","10":"A","11":"B","12":"C","13":"D","14":"E","15":"F"}
 
 
-
 no=int(input("Enter a decimal number  "))
 dec=no
 n=1
+
 def binaryconversion(dec,n):
     
 
@@ -32,6 +32,7 @@ def binaryconversion(dec,n):
         i-=1
     binarydigit="".join(ilhs)
     return binarydigit
+
 def octalconversion(dec,n):
     
 
@@ -72,11 +73,7 @@ def hexadecimalconv(dec,n,value):
 binary=binaryconversion(dec,n)
 octal=octalconversion(dec,n)
 hexa=hexadecimalconv(dec,n,value)
-"""""
-print("\n")
-print("The binary of {0}\u2081\u2080 is {1}\u2082\n\n".format(no,binary))
-print("The octal of {0}\u2081\u2080 is {1}\u2088\n\n".format(no,octal))
-print("The hexadecimal of {0}\u2081\u2080 is {1}\u2081\u2086\n\n".format(no,hexa))"""
+
 response=int(input("Enter to which number system you want to it convert...\n(1:binary   2:octal  3:hexadecimal   4:all three)\n\n"))
 if(response==1):
     print("\nThe binary of {0}\u2081\u2080 is {1}\u2082\n\n".format(no,binary))
